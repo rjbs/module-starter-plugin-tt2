@@ -1,5 +1,8 @@
 Revision history for Module-Starter-Plugin-TT2
 
+0.121   2006-08-05
+        fix capitalization in module template file (rt 16737, thanks EWILHELM!)
+
 0.12    2004-10-19 22:55 EDT
         included default templates in data section
         added basic "usage" pod section
