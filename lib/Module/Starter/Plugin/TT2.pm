@@ -49,7 +49,7 @@ your config file (C<~/.module-starter/config>):
  author: Lord Poncemby
  email: ponce@peerage.eng
  plugins: Module::Starter::Simple Module::Starter::Plugin::Template
-  Module::Starter::Plugin::Module::Store Module::Starter::Plugin::TT2
+  Module::Starter::Plugin::ModuleStore Module::Starter::Plugin::TT2
  template_module: Module::Starter::Plugin::TT2
 
 (Where the plugins line is one line.)  This tells Module::Starter to look for
