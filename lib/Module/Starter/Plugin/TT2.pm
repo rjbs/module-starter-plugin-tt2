@@ -99,7 +99,7 @@ Ricardo SIGNES, C<< <rjbs@cpan.org> >>
 
 =head1 COPYRIGHT
 
-Copyright 2004 Ricardo SIGNES, All Rights Reserved.
+Copyright 2004-2006 Ricardo SIGNES, All Rights Reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
@@ -218,7 +218,7 @@ $builder->create_build_script();
 ___Changes___
 Revision history for [%self.distro%]
 
-0.01    Date/time
+0.001   Date/time
         First version, released on an unsuspecting world.
 
 ___README___
