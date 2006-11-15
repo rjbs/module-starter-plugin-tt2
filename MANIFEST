@@ -5,11 +5,11 @@ Makefile.PL
 
 lib/Module/Starter/Plugin/TT2.pm
 
-t/00.load.t
+t/00-load.t
 t/pod-coverage.t
 t/pod.t
 
-templates/dir/00.load.t
+templates/dir/00-load.t
 templates/dir/Build.PL
 templates/dir/Changes
 templates/dir/cvsignore

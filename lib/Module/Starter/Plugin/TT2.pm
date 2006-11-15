@@ -1,11 +1,10 @@
-package Module::Starter::Plugin::TT2;
-
-our $VERSION = '0.121';
-
-use Template;
-
 use warnings;
 use strict;
+package Module::Starter::Plugin::TT2;
+
+our $VERSION = '0.122';
+
+use Template;
 
 =head1 NAME
 
@@ -13,7 +12,7 @@ Module::Starter::Plugin::TT2 - TT2 templates for Module::Starter::Template
 
 =head1 VERSION
 
-version 0.121
+version 0.122
 
  $Id$
 
@@ -82,16 +81,16 @@ and returns the resulting document.
 =cut
 
 sub render {
-	my $self = shift;
-	my $template = shift;
-	my $options = shift;
-	my $output;
+  my $self = shift;
+  my $template = shift;
+  my $options = shift;
+  my $output;
 
-	$options->{self} = $self;
-	$options->{year} = $self->_thisyear;
-	
-	$self->renderer->process(\$template, $options, \$output);
-	return $output;
+  $options->{self} = $self;
+  $options->{year} = $self->_thisyear;
+  
+  $self->renderer->process(\$template, $options, \$output);
+  return $output;
 }
 
 =head1 AUTHOR
@@ -122,11 +121,11 @@ use strict;
 
 =head1 VERSION
 
-Version 0.01
+version 0.001
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.001';
 
 =head1 SYNOPSIS
 
@@ -257,9 +256,9 @@ ___pod-coverage.t___
 use Test::More;
 eval "use Test::Pod::Coverage 1.04";
 plan skip_all => "Test::Pod::Coverage 1.04 required for testing POD coverage"
-	if $@;
+    if $@;
 all_pod_coverage_ok();
-___00.load.t___
+___00-load.t___
 use Test::More tests => [% modules.size %];
 
 BEGIN {

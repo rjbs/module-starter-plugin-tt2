@@ -1,5 +1,10 @@
 Revision history for Module-Starter-Plugin-TT2
 
+0.122   2006-11-14
+        packaging improvements
+        remove hard tabs in templates
+        change templates from starting at version 0.01 to 0.001
+
 0.121   2006-08-05
         fix capitalization in module template file (rt 16737, thanks EWILHELM!)
 

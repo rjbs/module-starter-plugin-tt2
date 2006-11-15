@@ -145,9 +145,9 @@ ___pod-coverage.t___
 use Test::More;
 eval "use Test::Pod::Coverage 1.04";
 plan skip_all => "Test::Pod::Coverage 1.04 required for testing POD coverage"
-	if $@;
+    if $@;
 all_pod_coverage_ok();
-___00.load.t___
+___00-load.t___
 use Test::More tests => [% modules.size %];
 
 BEGIN {

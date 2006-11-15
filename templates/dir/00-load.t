@@ -2,7 +2,7 @@ use Test::More tests => [% modules.size %];
 
 BEGIN {
 [% FOREACH module = modules -%]
-  use_ok('[%module%]');
+    use_ok('[%module%]');
 [% END -%]
 }
 
