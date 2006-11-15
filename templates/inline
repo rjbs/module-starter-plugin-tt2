@@ -10,11 +10,11 @@ use strict;
 
 =head1 VERSION
 
-Version 0.01
+version 0.001
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.001';
 
 =head1 SYNOPSIS
 
@@ -79,6 +79,7 @@ WriteMakefile(
     AUTHOR              => '[% self.author %] <[% self.email %]>',
     VERSION_FROM        => '[%main_pm_file%]',
     ABSTRACT_FROM       => '[%main_pm_file%]',
+    LICENSE             => 'perl',
     PL_FILES            => {},
     PREREQ_PM => {
         'Test::More' => 0,

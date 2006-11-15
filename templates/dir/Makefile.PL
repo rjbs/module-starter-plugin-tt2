@@ -7,6 +7,7 @@ WriteMakefile(
     AUTHOR              => '[% self.author %] <[% self.email %]>',
     VERSION_FROM        => '[%main_pm_file%]',
     ABSTRACT_FROM       => '[%main_pm_file%]',
+    LICENSE             => 'perl',
     PL_FILES            => {},
     PREREQ_PM => {
         'Test::More' => 0,
