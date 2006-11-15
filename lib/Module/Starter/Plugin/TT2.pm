@@ -15,7 +15,7 @@ Module::Starter::Plugin::TT2 - TT2 templates for Module::Starter::Template
 
 version 0.121
 
- $Id: TT2.pm,v 1.6 2004/10/20 02:55:27 rjbs Exp $
+ $Id$
 
 =head1 SYNOPSIS
 
