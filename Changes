@@ -1,5 +1,8 @@
 Revision history for Module-Starter-Plugin-TT2
 
+0.123   2006-11-18
+        packaging improvements
+
 0.122   2006-11-14
         packaging improvements
         remove hard tabs in templates

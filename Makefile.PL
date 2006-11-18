@@ -7,6 +7,7 @@ WriteMakefile(
     AUTHOR              => 'Ricardo SIGNES <rjbs@cpan.org>',
     VERSION_FROM        => 'lib/Module/Starter/Plugin/TT2.pm',
     ABSTRACT_FROM       => 'lib/Module/Starter/Plugin/TT2.pm',
+    LICENSE             => 'perl',
     PL_FILES            => {},
     PREREQ_PM => {
 		    'Module::Starter' => 1.25_01,
