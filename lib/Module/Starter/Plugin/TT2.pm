@@ -2,7 +2,7 @@ use warnings;
 use strict;
 package Module::Starter::Plugin::TT2;
 
-our $VERSION = '0.123';
+our $VERSION = '0.124';
 
 use Template;
 
@@ -12,9 +12,7 @@ Module::Starter::Plugin::TT2 - TT2 templates for Module::Starter::Template
 
 =head1 VERSION
 
-version 0.123
-
- $Id$
+version 0.124
 
 =head1 SYNOPSIS
 
@@ -198,6 +196,16 @@ WriteMakefile(
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => '[%self.distro%]-*' },
 );
+___MI_Makefile.PL___
+use inc::Module::Install;
+
+name     '[% self.distro  %]';
+all_from '[% main_pm_file %]';
+author   '[% self.author %] <[% self.email %]>';
+
+build_requires 'Test::More';
+
+WriteAll;
 ___Build.PL___
 
 use strict;

@@ -10,7 +10,7 @@ WriteMakefile(
     LICENSE             => 'perl',
     PL_FILES            => {},
     PREREQ_PM => {
-		    'Module::Starter' => 1.25_01,
+		    'Module::Starter' => 1.470, # first v. with Module::Install, ::Template
         'Test::More'      => 0,
         'Template'        => 2,
     },
