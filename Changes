@@ -1,5 +1,8 @@
 Revision history for Module-Starter-Plugin-TT2
 
+0.125   2008-09-14
+        apply https://rt.cpan.org/Ticket/Display.html?id=15027
+
 0.124   2007-11-09
         add default template for Module::Install
 

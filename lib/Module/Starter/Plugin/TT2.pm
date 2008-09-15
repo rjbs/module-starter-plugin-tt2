@@ -2,7 +2,7 @@ use warnings;
 use strict;
 package Module::Starter::Plugin::TT2;
 
-our $VERSION = '0.124';
+our $VERSION = '0.125';
 
 use Template;
 
@@ -12,7 +12,7 @@ Module::Starter::Plugin::TT2 - TT2 templates for Module::Starter::Template
 
 =head1 VERSION
 
-version 0.124
+version 0.125
 
 =head1 SYNOPSIS
 
@@ -69,7 +69,11 @@ stores it in the Module::Starter object.
 
 =cut
 
-sub renderer { my $renderer = Template->new; }
+sub renderer {
+  my ($self) = @_;
+  my $conf = (eval $self->{template_parms})||{};
+  my $renderer = Template->new($conf);
+}
 
 =head2 C<< render( $template, \%options ) >>
 
